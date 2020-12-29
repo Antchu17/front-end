@@ -1,0 +1,5 @@
+.nav-item {
+	&.current > a {
+		color: $secondary-color;
+	}
+}

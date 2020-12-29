@@ -47,6 +47,9 @@
   .projects {
     grid-template-columns: repeat(1, 1fr); } }
 
+.nav-item.current > a {
+  color: #a30606; }
+
 * {
   box-sizing: border-box; }
 
@@ -115,7 +118,14 @@ a {
 header {
   position: fixed;
   width: 100%; }
-  header .portrait {
+
+.text-secondary {
+  color: #a30606; }
+
+main {
+  padding: 2rem;
+  height: 100%; }
+  main .portrait {
     width: 200px;
     height: 200px;
     background: url(../img/naamasmall.png);
@@ -123,13 +133,6 @@ header {
     border: solid 3px #a30606;
     display: table;
     margin: 0 auto; }
-
-.text-secondary {
-  color: #a30606; }
-
-main {
-  padding: 7rem;
-  height: 100%; }
   main .icons {
     margin-top: 1rem;
     text-align: center; }

@@ -1,5 +1,6 @@
 @import 'config';
 @import 'mobile';
+@import 'menu';
 
 
 * {
@@ -65,6 +66,16 @@ header {
 	position: fixed;
 	width: 100%;
 	
+}
+
+.text-secondary {
+	color: $secondary-color;
+}
+
+main {
+	padding: 2rem;
+	height: 100%;
+
 	.portrait {
 		width: 200px;
 		height: 200px;
@@ -74,15 +85,6 @@ header {
 		display: table;
 		margin: 0 auto;
 	}
-}
-
-.text-secondary {
-	color: $secondary-color;
-}
-
-main {
-	padding: 7rem;
-	height: 100%;
 	
 	.icons {
 		margin-top: 1rem;
