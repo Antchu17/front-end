@@ -59,7 +59,7 @@ body {
   height: 100%;
   margin: 0;
   margin-top: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Crimson Pro', serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/chongqing.jpg);
@@ -123,8 +123,9 @@ header {
   color: red; }
 
 main {
-  padding: 2rem;
-  height: 100%; }
+  padding: 0rem;
+  height: 100%;
+  min-height: calc(100vh - 92px); }
   main .portrait {
     width: 200px;
     height: 200px;
@@ -164,8 +165,8 @@ main {
     margin-right: 1rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      background: #444;
-      color: set-text-color(#444); }
+      background: #cc0000;
+      color: #444; }
 
 #main-footer {
   text-align: center;
