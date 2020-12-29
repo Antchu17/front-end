@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: rgb(163, 6, 6);
+$secondary-color: rgb(255, 0, 0);
 $show-home-image: true;
 $home-image: url(../img/chongqing.jpg);
 $background-opacity: 0.4;
@@ -17,7 +17,7 @@ $background-opacity: 0.4;
 		}
 		&:after {
 			content: '';
-			position: absolute;
+			position: fixed;
 			top: 0;
 			right: 0;
 			width: 100%;

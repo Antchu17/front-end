@@ -29,6 +29,8 @@ h3 {
 	&.lg-heading {
 		font-size: 7rem;
 		text-align: center;
+		//text-transform: uppercase;
+		
 
 
 		.text-primary {
@@ -88,6 +90,7 @@ main {
 	
 	.icons {
 		margin-top: 1rem;
+		margin-bottom: 2rem;
 		text-align: center;
 
 		a {
@@ -105,7 +108,38 @@ main {
 	&#home {
 		overflow: hidden;
 		h1 {
-			margin-top: 8vh;
+			margin-top: 0vh;
 		}
 	}
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 1rem;
+
+	div {
+		font-size: 2rem; 
+		border: 3px #fff solid;
+		padding: 1.5rem 2.5rem;
+		margin-bottom: 3rem;
+		margin-right: 1rem;
+		margin-right: 1rem;
+		@include easeOut;
+
+		&:hover{
+			background: $primary-color;
+			color: set-text-color($primary-color);
+		}
+	}
+}
+
+#main-footer {
+	text-align: center;
+	padding: 1rem;
+	background: darken($primary-color, 10);
+	color: set-text-color($primary-color);
+	height: 60px;
 }
