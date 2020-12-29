@@ -144,3 +144,36 @@ main {
 	color: set-text-color($primary-color);
 	height: 60px;
 }
+
+.about-info {
+	display: grid;
+	grid-gap: 30px;
+	padding-left: 8%;
+	padding-right: 20%;
+	grid-template-areas: 
+	'bio'
+	'job1'
+	'job2';
+	grid-template-columns: repeat(1, 1fr);
+	#h3 {
+		color: $secondary-color;
+	}
+}
+
+.bio {
+	grid-area: bio;
+	font-size: 1.5rem;
+}
+
+.job-1 {
+	grid-area: job1;
+}
+.job-2 {
+	grid-area: job2;
+}
+
+.job {
+	background: lighten($primary-color, 5);
+	padding: 0.5rem;
+	border-bottom: $secondary-color 5px solid;
+}
