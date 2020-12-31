@@ -351,7 +351,7 @@ main {
   grid-gap: 30px;
   padding-left: 8%;
   padding-right: 8%;
-  grid-template-areas: 'historybio historybio historybio' 'coursesbio coursesbio coursesbio' 'course1 course2 course3' 'course4 course5 course6' 'course7 course8 course9' 'course10 course11 empty';
+  grid-template-areas: 'historybio historybio historybio' 'coursesbio coursesbio coursesbio' 'course1 course2 course3' 'course4 course5 course6' 'course7 course8 course9' 'course10 course11 empty' 'emqbio emqbio emqbio' 'emq1 emq2 emq3' 'random random random' 'art1 art2 art3';
   grid-template-columns: repeat(3, 1fr); }
   .history-info #h3 {
     color: red; }
@@ -406,14 +406,58 @@ main {
   border-bottom: red 4px solid;
   border-top: red 4px solid; }
 
+.random {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: red 4px solid;
+  border-top: red 4px solid; }
+
+.emqbio {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: red 4px solid;
+  border-top: red 4px solid; }
+
 .course {
   background: #515151;
   padding: 0.5rem;
   border-bottom: red 5px solid; }
 
-@media screen and (min-width: 769) and (max-width: 1170px) {
-  .me-info {
-    grid-template-columns: repeat(3, 1fr); } }
+.emq {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: red 5px solid; }
+
+.art {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: red 5px solid; }
+
+.emqbio {
+  grid-area: emqbio;
+  font-size: 1.5rem; }
+
+.emq1 {
+  grid-area: emq1; }
+
+.emq2 {
+  grid-area: emq2; }
+
+.emq3 {
+  grid-area: emq3; }
+
+.random {
+  grid-area: random;
+  font-size: 1.5rem; }
+
+.art1 {
+  grid-area: art1; }
+
+.art2 {
+  grid-area: art2; }
+
+.art3 {
+  grid-area: art3; }
 
 @media screen and (max-width: 768px) {
   .text-secondary {
@@ -426,33 +470,12 @@ main {
       line-height: 1;
       margin-bottom: 1rem; }
   .me-info {
-    display: grid;
-    grid-gap: 30px;
-    padding-left: 8%;
-    padding-right: 8%;
     grid-template-areas: 'myimage' 'meabio' 'meabio' 'mebio' 'mebio' 'mebio' 'me1' 'me2' 'me3';
     grid-template-columns: 1fr; }
-    .me-info #h3 {
-      color: red; }
   .history-info {
-    display: grid;
-    grid-gap: 30px;
-    padding-left: 8%;
-    padding-right: 8%;
-    grid-template-areas: 'historybio' 'coursesbio' 'course1' 'course2' 'course3' 'course4' 'course5' 'course6' 'course7' 'course8' 'course9' 'course10' 'course11';
-    grid-template-columns: 1fr; }
-    .history-info #h3 {
-      color: red; } }
+    grid-template-areas: 'historybio' 'coursesbio' 'course1' 'course2' 'course3' 'course4' 'course5' 'course6' 'course7' 'course8' 'course9' 'course10' 'course11' 'empty' 'emqbio' 'emqbio' 'emqbio' 'emq1' 'emq2' 'emq3' 'random' 'random' 'random' 'art1' 'art2' 'art3';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
-  .me-info {
-    display: grid;
-    grid-gap: 30px;
-    padding-left: 8%;
-    padding-right: 8%;
-    grid-template-areas: 'myimage' 'meabio' 'meabio' 'mebio' 'mebio' 'mebio' 'me1' 'me2' 'me3';
-    grid-template-columns: 1fr; }
-    .me-info #h3 {
-      color: red; } }
+    margin-top: 10vh; } }

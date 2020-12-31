@@ -1,13 +1,13 @@
 // Widescreens
 @include mediaXL {
+
+
 	
 }
 
 //desktops and laptops
 @include mediaLg {
-	.me-info {
-		grid-template-columns: repeat(3, 1fr);
-	}
+
 }
 
 //tables and small laptops
@@ -28,10 +28,6 @@
 
 
 	.me-info {
-		display: grid;
-		grid-gap: 30px;
-		padding-left: 8%;
-		padding-right: 8%;
 		grid-template-areas: 
 		'myimage'
 		'meabio'
@@ -43,16 +39,9 @@
 		'me2'
 		'me3';
 		grid-template-columns: 1fr;
-		#h3 {
-			color: $secondary-color;
-		}
 	}
 
 	.history-info {
-		display: grid;
-		grid-gap: 30px;
-		padding-left: 8%;
-		padding-right: 8%;
 		grid-template-areas: 
 		'historybio'
 		'coursesbio'
@@ -66,11 +55,21 @@
 		'course8'
 		'course9'
 		'course10'
-		'course11';
+		'course11'
+		'empty'
+		'emqbio'
+		'emqbio'
+		'emqbio'
+		'emq1'
+		'emq2'
+		'emq3'
+		'random'
+		'random'
+		'random'
+		'art1'
+		'art2'
+		'art3';
 		grid-template-columns: 1fr;
-		#h3 {
-			color: $secondary-color;
-		}
 	}
 }
 
@@ -79,27 +78,6 @@
 	
 	main#home h1 {
 		margin-top: 10vh;
-	}
-
-	.me-info {
-		display: grid;
-		grid-gap: 30px;
-		padding-left: 8%;
-		padding-right: 8%;
-		grid-template-areas: 
-		'myimage'
-		'meabio'
-		'meabio'
-		'mebio'
-		'mebio'
-		'mebio'
-		'me1'
-		'me2'
-		'me3';
-		grid-template-columns: 1fr;
-		#h3 {
-			color: $secondary-color;
-		}
 	}
 
 }

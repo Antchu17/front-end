@@ -329,7 +329,11 @@ main {
 	'course1 course2 course3'
 	'course4 course5 course6'
 	'course7 course8 course9'
-	'course10 course11 empty';
+	'course10 course11 empty'
+	'emqbio emqbio emqbio'
+	'emq1 emq2 emq3'
+	'random random random'
+	'art1 art2 art3';
 	grid-template-columns: repeat(3, 1fr);
 	#h3 {
 		color: $secondary-color;
@@ -391,13 +395,65 @@ main {
 	border-bottom: $secondary-color 4px solid;
 	border-top: $secondary-color 4px solid;
 }
+.random {
+	background: lighten($primary-color, 5);
+	padding: 0.5rem;
+	border-bottom: $secondary-color 4px solid;
+	border-top: $secondary-color 4px solid;
+}
+.emqbio {
+	background: lighten($primary-color, 5);
+	padding: 0.5rem;
+	border-bottom: $secondary-color 4px solid;
+	border-top: $secondary-color 4px solid;
+}
 
 .course {
 	background: lighten($primary-color, 5);
 	padding: 0.5rem;
 	border-bottom: $secondary-color 5px solid;
 }
+.emq {
+	background: lighten($primary-color, 5);
+	padding: 0.5rem;
+	border-bottom: $secondary-color 5px solid;
+}
+.art {
+	background: lighten($primary-color, 5);
+	padding: 0.5rem;
+	border-bottom: $secondary-color 5px solid;
+}
 
+
+.emqbio {
+	grid-area: emqbio;
+	font-size: 1.5rem;
+}
+
+.emq1 {
+	grid-area: emq1;
+}
+.emq2 {
+	grid-area: emq2;
+}
+.emq3 {
+	grid-area: emq3;
+}
+
+.random {
+	grid-area: random;
+	font-size: 1.5rem;
+}
+
+.art1 {
+	grid-area: art1;
+}
+.art2 {
+	grid-area: art2;
+}
+.art3 {
+	grid-area: art3;
+}
 
 
 @import 'mobile';
