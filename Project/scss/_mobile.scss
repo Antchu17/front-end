@@ -1,13 +1,31 @@
 // Widescreens
 @include mediaXL {
 
-
+	grid-template-columns: repeat(3, 1fr);
 	
 }
 
 //desktops and laptops
 @include mediaLg {
 
+
+	.history-info {
+		grid-template-areas: 
+			'historybio coursesbio'
+			'course1 course2'
+			'course3 course4'
+			'course5 course6'
+			'course7 course8'
+			'course9 course10'
+			'course11 empty'
+			'emqbio emqbio'
+			'emqbio emq1'
+			'emq2 emq3'
+			'random random'
+			'art1 art2'
+			'art3 empty';
+			grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 //tables and small laptops

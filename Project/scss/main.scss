@@ -324,17 +324,17 @@ main {
 	padding-left: 8%;
 	padding-right: 8%;
 	grid-template-areas: 
-	'historybio historybio historybio'
-	'coursesbio coursesbio coursesbio'
-	'course1 course2 course3'
-	'course4 course5 course6'
-	'course7 course8 course9'
-	'course10 course11 empty'
-	'emqbio emqbio emqbio'
-	'emq1 emq2 emq3'
-	'random random random'
-	'art1 art2 art3';
-	grid-template-columns: repeat(3, 1fr);
+		'historybio historybio historybio'
+		'coursesbio coursesbio coursesbio'
+		'course1 course2 course3'
+		'course4 course5 course6'
+		'course7 course8 course9'
+		'course10 course11 empty'
+		'emqbio emqbio emqbio'
+		'emq1 emq2 emq3'
+		'random random random'
+		'art1 art2 art3';
+		grid-template-columns: repeat(3, 1fr);
 	#h3 {
 		color: $secondary-color;
 	}
